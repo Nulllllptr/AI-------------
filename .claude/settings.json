@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/nullptr/AppData/Roaming/Code/logs/20260805T152727/window1/exthost/Anthropic.claude-code/**)"
+    ]
+  }
+}
