@@ -1,0 +1,32 @@
+/* Markdownプレビューだけを明るい背景にする(エディタ本体のテーマには影響しない) */
+body.vscode-dark,
+body.vscode-high-contrast {
+  background-color: #ffffff !important;
+  color: #1f1f1f !important;
+}
+
+body.vscode-dark a,
+body.vscode-high-contrast a {
+  color: #0969da !important;
+}
+
+body.vscode-dark code,
+body.vscode-dark pre,
+body.vscode-high-contrast code,
+body.vscode-high-contrast pre {
+  background-color: #f5f5f5 !important;
+  color: #1f1f1f !important;
+}
+
+body.vscode-dark blockquote,
+body.vscode-high-contrast blockquote {
+  border-left-color: #d0d7de !important;
+  color: #57606a !important;
+}
+
+body.vscode-dark table th,
+body.vscode-dark table td,
+body.vscode-high-contrast table th,
+body.vscode-high-contrast table td {
+  border-color: #d0d7de !important;
+}

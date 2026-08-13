@@ -6,7 +6,11 @@
       "Skill(update-config:*)",
       "Bash(jq --version)",
       "Bash(where jq *)",
-      "Edit(/.claude/skills/output-format-guard/**)"
+      "Edit(/.claude/skills/output-format-guard/**)",
+      "Bash(mkdir -p \"/c/Users/nullptr/Desktop/第１PC/AI駆動開発テンプレート/.claude/skills/cost-guard\" && echo OK)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\skills"
     ]
   },
   "hooks": {
