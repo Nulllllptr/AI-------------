@@ -1,9 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/nullptr/AppData/Roaming/Code/logs/20260805T152727/window1/exthost/Anthropic.claude-code/**)",
-      "Bash(mkdir -p \"/c/Users/nullptr/Desktop/第１PC/AI駆動開発テンプレート/.claude/skills/implementation-guard\" \"/c/Users/nullptr/Desktop/第１PC/AI駆動開発テンプレート/.claude/skills/release-review-guard\" && echo OK)",
-      "Bash(mkdir -p \"/c/Users/nullptr/Desktop/第１PC/AI駆動開発テンプレート/.claude/skills/cicd-guard\" && echo OK)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git merge *)"
     ],
     "ask": [
       "Read(.env*)",
@@ -11,14 +12,6 @@
       "Write(.env*)",
       "Read(~/.ssh/id_rsa)",
       "Read(~/.ssh/id_ed25519)"
-    ],
-    "additionalDirectories": [
-      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\skills",
-      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\skills\\implementation-guard",
-      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\skills\\release-review-guard",
-      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\rules",
-      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\skills\\security-guard",
-      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\skills\\cicd-guard"
     ]
   }
 }

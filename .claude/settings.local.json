@@ -1,16 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/nullptr/.claude/**)",
       "Skill(update-config)",
       "Skill(update-config:*)",
       "Bash(jq --version)",
       "Bash(where jq *)",
-      "Edit(/.claude/skills/output-format-guard/**)",
-      "Bash(mkdir -p \"/c/Users/nullptr/Desktop/第１PC/AI駆動開発テンプレート/.claude/skills/cost-guard\" && echo OK)"
-    ],
-    "additionalDirectories": [
-      "C:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発テンプレート\\.claude\\skills"
+      "Edit(/.claude/skills/output-format-guard/**)"
     ]
   },
   "hooks": {
@@ -20,14 +15,14 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"c:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発開発者ガードレール\\.claude\\hooks\\check-secrets.ps1\"",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"~\\.claude\\hooks\\check-secrets.ps1\"",
             "shell": "powershell",
             "timeout": 10,
             "statusMessage": "シークレット混入を確認中..."
           },
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"c:\\Users\\nullptr\\Desktop\\第１PC\\AI駆動開発開発者ガードレール\\.claude\\hooks\\check-diff-size.ps1\"",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"~\\.claude\\hooks\\check-diff-size.ps1\"",
             "shell": "powershell",
             "timeout": 10,
             "statusMessage": "差分行数を確認中..."
